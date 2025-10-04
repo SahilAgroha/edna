@@ -16,18 +16,18 @@ import UploadFile from '../Dashboard/components/UploadFile/UploadFile'
 const EDNARoutes = () => {
   return (
     <Routes>
-        <Route path='/' element={<Overview/>}/>
-        <Route path="/upload" element={<UploadFile />} />
+        <Route path='/edna/' element={<Overview/>}/>
+        <Route path="/edna/upload" element={<UploadFile />} />
         {/* <Route path="/analysis/:analysisId" element={<AnalysisDetail />} /> */}
-        <Route path='/abundance' element={<Abundance/>}/>
-        <Route path='/diversity' element={<DiversityAnalytics/>}/>
+        <Route path='/edna/abundance' element={<Abundance/>}/>
+        <Route path='/edna/diversity' element={<DiversityAnalytics/>}/>
         {/* <Route path='/diversity/:id' element={<DiversityDetail/>}/> */}
-        <Route path='/novel-taxa' element={<NovelTaxa/>}/>
+        <Route path='/edna/novel-taxa' element={<NovelTaxa/>}/>
         {/* <Route path='/novel-taxa/:id' element={<NovelTaxaDetail/>}/> */}
-        <Route path='/taxa-explorer' element={<TaxaExplorer/>}/>
+        <Route path='/edna/taxa-explorer' element={<TaxaExplorer/>}/>
         {/* <Route path='/taxa-explorer/:id' element={<TaxaDetail/>}/> */}
-        <Route path='/chatbot' element={<Chatbot/>}/>
-        <Route path='/settings' element={<Settings/>}/>
+        <Route path='/edna/chatbot' element={<Chatbot/>}/>
+        <Route path='/edna/settings' element={<Settings/>}/>
     </Routes>
   )
 }
