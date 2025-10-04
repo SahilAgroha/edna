@@ -28,6 +28,10 @@ export default defineConfig({
       },
     }
   },
+  base: '/edna/', // Replace 'edna' with your repository name
+  build: {
+    outDir: 'dist'
+  }
   
 })
 
