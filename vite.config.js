@@ -31,6 +31,12 @@ export default defineConfig({
   base: '/edna/', // Replace 'edna' with your repository name
   build: {
     outDir: 'dist'
+  },resolve: {
+    alias: {
+      // Remove these if present:
+      // '@mui/material': '@mui/material/modern', 
+      // '@mui/styled-engine': '@mui/styled-engine/modern',
+    }
   }
   
 })
